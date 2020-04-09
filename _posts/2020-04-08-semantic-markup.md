@@ -9,6 +9,12 @@ tags:
 
 # Semantic Elements
 
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of **non-semantic** elements: `<div>` and `<span>` - Tells nothing about its content.
+
+Examples of **semantic** elements: `<form>`, `<table>`, and `<article>` - Clearly defines its content.
+
 This document is written as summary from [this article](https://guide.freecodecamp.org/html/html5-semantic-elements/).
 
 ## **List of new semantic elements**
@@ -44,7 +50,8 @@ Elements such as `<header>`, `<nav>`, `<section>`, `<article>`, `<aside>`, and `
 	</article>
 </section>
 <footer></footer>
-
+```
+```html
 <div id="header"></div>
 <div class="section">
 	<div class="article">
@@ -67,7 +74,7 @@ The `<section>` and `<article>` elements are conceptually similar and interchang
 
 1. An article is intended to be independently distributable or reusable.
 2. A section is a thematic grouping of content.
-
+```html
     <section>
       <p>Top Stories</p>
       <section>
@@ -83,6 +90,7 @@ The `<section>` and `<article>` elements are conceptually similar and interchang
         <article>Story 3</article>
       </section>
     </section>
+```
 
 ## `<header>` and `<hgroup>`
 
