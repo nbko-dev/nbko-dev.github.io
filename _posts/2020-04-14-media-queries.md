@@ -24,9 +24,9 @@ Media queries can be used to check many things, such as:
 
 Media queries are used for the following:
 
-- To conditionally apply styles with the [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) `[@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)` and `[@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)` [at-rules.](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
-- To target specific media for the `[<style>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)`, `[<link>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)`, `[<source>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source)`, and other [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) elements with the `media=` attribute.
-- To [test and monitor media states](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries) using the `[Window.matchMedia()](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)` and `[MediaQueryList.addListener()](https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener)` [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) methods.
+- To conditionally apply styles with the [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) `[@media]`(https://developer.mozilla.org/en-US/docs/Web/CSS/@media) and `[@import]`(https://developer.mozilla.org/en-US/docs/Web/CSS/@import) [at-rules.](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
+- To target specific media for the `[<style>]`(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style), `[<link>]`(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link), `[<source>]`(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source), and other [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) elements with the `media=` attribute.
+- To [test and monitor media states](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries) using the `[Window.matchMedia()]`(https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) and `[MediaQueryList.addListener()]`(https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener) [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) methods.
 
 ## Syntax
 
