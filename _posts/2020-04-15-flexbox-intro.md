@@ -9,7 +9,6 @@ tags:
 
 ---
 
-# CSS Flexbox
 
 Former layout modes before the Flexbox Layout Module:
 

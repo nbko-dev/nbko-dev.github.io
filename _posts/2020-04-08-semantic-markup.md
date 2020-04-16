@@ -7,8 +7,6 @@ tags:
   - responsive web
 ---
 
-# Semantic Elements
-
 A semantic element clearly describes its meaning to both the browser and the developer.
 
 Examples of **non-semantic** elements: `<div>` and `<span>` - Tells nothing about its content.

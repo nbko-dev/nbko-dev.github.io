@@ -8,9 +8,6 @@ tags:
   - media queries
 
 ---
-
-# CSS Media Queries
-
 ## Definition
 
 The `@media` rule is used in media queries to apply different styles for different media types/devices.
