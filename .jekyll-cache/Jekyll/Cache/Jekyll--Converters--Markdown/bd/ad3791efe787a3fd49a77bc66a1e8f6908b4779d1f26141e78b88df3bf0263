@@ -1,0 +1,54 @@
+I"\<p>Former layout modes before the Flexbox Layout Module:</p>
+
+<ul>
+  <li>Block, for sections in a webpage</li>
+  <li>Inline, for text</li>
+  <li>Table, for two-dimensional table data</li>
+  <li>Positioned, for explicit position of an element</li>
+</ul>
+
+<p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure <strong>without using float or positioning</strong>.</p>
+
+<h2 id="flexbox-elements">Flexbox Elements</h2>
+
+<p>To define a flex container:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+<span class="nc">.flex-container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">DodgerBlue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.flex-container</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#f1f1f1</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div&gt;</span>1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>3<span class="nt">&lt;/div&gt;</span>  
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>A Flexible Layout must have a parent element with the <span class="nt">&lt;em&gt;</span>display<span class="nt">&lt;/em&gt;</span> property set to <span class="nt">&lt;em&gt;</span>flex<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Direct child elements(s) of the flexible container automatically becomes flexible items.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="related-links">Related Links</h2>
+
+<ul>
+  <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">https://www.w3schools.com/css/css3_flexbox.asp</a></li>
+</ul>
+:ET

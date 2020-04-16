@@ -28,21 +28,24 @@ The flex container properties
 - `align-items`
 - `align-content`
 
-| Property            | Description                                                  |
-| :------------------ | :----------------------------------------------------------- |
+## All Properties
+
+| Property        | Description                                                  |
+| -------------- | ----------------------------------------------------------- |
 | **display**         | Specifies the type of box used for an HTML element           |
 | **flex-direction**  | Specifies the direction of the flexible items inside a flex container |
 | **justify-content** | Horizontally aligns the flex items when the items do not use all available space on the main-axis |
-| align-items         | Vertically aligns the flex items when the items do not use all available space on the cross-axis |
+| align-items     | Vertically aligns the flex items when the items do not use all available space on the cross-axis |
 | **flex-wrap**       | Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line |
-| align-content       | Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines |
+| align-content   | Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines |
 | **flex-flow**       | A shorthand property for flex-direction and flex-wrap        |
-| order               | Specifies the order of a flexible item relative to the rest of the flex items inside the same container |
-| align-self          | Used on flex items. Overrides the container's align-items property |
-| flex                | A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties |
+| order           | Specifies the order of a flexible item relative to the rest of the flex items inside the same container |
+| align-self      | Used on flex items. Overrides the container's align-items property |
+| flex            | A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties |
+
 ![flexbox-container-map](../images/flexbox/flexbox-container-map.png)
 
-##flex-direction
+## flex-direction
 
 defines direction of stack from flex items
 
@@ -62,7 +65,7 @@ defines direction of stack from flex items
 
 ![flex-direction-row-reverse](../images/flexbox/flex-direction-row-reverse.png)
 
-##flex-wrap
+## flex-wrap
 
 specifies wrap of the flex items. Default is `nowrap`.
 
@@ -77,7 +80,7 @@ specifies wrap of the flex items. Default is `nowrap`.
 - `nowrap`
 - `wrap-reverse`: wrap if necessary in reverse order
 
-##flex-flow
+## flex-flow
 
 shorthand property for setting both the `flex-direction` and `flex-wrap`
 
@@ -88,7 +91,7 @@ shorthand property for setting both the `flex-direction` and `flex-wrap`
 }
 ```
 
-##justify-content
+## justify-content
 
 align the flex items
 

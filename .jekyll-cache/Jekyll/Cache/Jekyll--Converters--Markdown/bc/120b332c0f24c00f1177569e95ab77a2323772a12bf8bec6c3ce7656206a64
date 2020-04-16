@@ -1,0 +1,69 @@
+I"�<h2 id="definition">Definition</h2>
+
+<p>The <code class="highlighter-rouge">@media</code> rule is used in media queries to apply different styles for different media types/devices.</p>
+
+<p>Media queries can be used to check many things, such as:</p>
+
+<ul>
+  <li>width and height of the viewport</li>
+  <li>width and height of the device</li>
+  <li>orientation (is the tablet/phone in landscape or portrait mode?)</li>
+  <li>resolution</li>
+</ul>
+
+<p>Media queries are used for the following:</p>
+
+<ul>
+  <li>To conditionally apply styles with the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> <code class="highlighter-rouge">[@media]</code>(https://developer.mozilla.org/en-US/docs/Web/CSS/@media) and <code class="highlighter-rouge">[@import]</code>(https://developer.mozilla.org/en-US/docs/Web/CSS/@import) <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">at-rules.</a></li>
+  <li>To target specific media for the <code class="highlighter-rouge">[&lt;style&gt;]</code>(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style), <code class="highlighter-rouge">[&lt;link&gt;]</code>(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link), <code class="highlighter-rouge">[&lt;source&gt;]</code>(https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source), and other <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> elements with the <code class="highlighter-rouge">media=</code> attribute.</li>
+  <li>To <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries">test and monitor media states</a> using the <code class="highlighter-rouge">[Window.matchMedia()]</code>(https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) and <code class="highlighter-rouge">[MediaQueryList.addListener()]</code>(https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener) <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> methods.</li>
+</ul>
+
+<h2 id="syntax">Syntax</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="n">not</span><span class="err">|</span><span class="n">only</span> <span class="n">mediatype</span> <span class="n">and</span><span class="err">|</span><span class="n">not</span><span class="err">|</span><span class="n">only</span> <span class="p">(</span><span class="n">media</span> <span class="n">feature</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.my-code</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="media-types">Media Types</h3>
+
+<p><em>Media types</em> describe the general category of a device. Except when using the <code class="highlighter-rouge">not</code> or <code class="highlighter-rouge">only</code> logical operators, the media type is optional and the <code class="highlighter-rouge">all</code> type will be implied.</p>
+
+<ul>
+  <li><strong><code class="highlighter-rouge">all</code></strong>Suitable for all devices.</li>
+  <li><strong><code class="highlighter-rouge">print</code></strong>Intended for paged material and documents viewed on a screen in print preview mode. (Please see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Paged_Media">paged media</a> for information about formatting issues that are specific to these formats.)</li>
+  <li><strong><code class="highlighter-rouge">screen</code></strong>Intended primarily for screens.</li>
+  <li><strong><code class="highlighter-rouge">speech</code></strong>Intended for speech synthesizers.</li>
+</ul>
+
+<h3 id="media-features">Media Features</h3>
+
+<p><strong>Mostly used features</strong></p>
+
+<ul>
+  <li><code class="highlighter-rouge">width</code></li>
+  <li><code class="highlighter-rouge">min-width</code> / <code class="highlighter-rouge">max-width</code></li>
+  <li><code class="highlighter-rouge">orientation</code> : portrait, landscape</li>
+</ul>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Here</a> you have more information about the specifications.</p>
+
+<h3 id="example-code">Example Code</h3>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">400px</span><span class="p">)</span> <span class="p">{</span> <span class="err">…</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="breakpoints-in-media-queries">Breakpoints in Media Queries</h2>
+
+<p><img src="../images/media_queries_1-lg.jpg" alt="../images/media_queries_1-lg.jpg" /></p>
+
+<p><img src="../images/Media-Queries.png" alt="../images/Media-Queries.png" /></p>
+
+<h2 id="related-links">Related Links</h2>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries</a></li>
+  <li><a href="https://www.seobility.net/en/wiki/Media_Queries">https://www.seobility.net/en/wiki/Media_Queries</a></li>
+</ul>
+:ET

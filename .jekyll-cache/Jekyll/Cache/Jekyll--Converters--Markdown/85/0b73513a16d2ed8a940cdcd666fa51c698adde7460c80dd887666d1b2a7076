@@ -1,0 +1,153 @@
+I""/<p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+
+<p>Examples of <strong>non-semantic</strong> elements: <code class="highlighter-rouge">&lt;div&gt;</code> and <code class="highlighter-rouge">&lt;span&gt;</code> - Tells nothing about its content.</p>
+
+<p>Examples of <strong>semantic</strong> elements: <code class="highlighter-rouge">&lt;form&gt;</code>, <code class="highlighter-rouge">&lt;table&gt;</code>, and <code class="highlighter-rouge">&lt;article&gt;</code> - Clearly defines its content.</p>
+
+<p>This document is written as summary from <a href="https://guide.freecodecamp.org/html/html5-semantic-elements/">this article</a>.</p>
+
+<h2 id="list-of-new-semantic-elements"><strong>List of new semantic elements</strong></h2>
+
+<p>The semantic elements added in HTML5 are:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">&lt;article&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;aside&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;details&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;figcaption&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;figure&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;footer&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;header&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;main&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;mark&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;nav&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;section&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;summary&gt;</code></li>
+  <li><code class="highlighter-rouge">&lt;time&gt;</code></li>
+</ul>
+
+<p>Elements such as <code class="highlighter-rouge">&lt;header&gt;</code>, <code class="highlighter-rouge">&lt;nav&gt;</code>, <code class="highlighter-rouge">&lt;section&gt;</code>, <code class="highlighter-rouge">&lt;article&gt;</code>, <code class="highlighter-rouge">&lt;aside&gt;</code>, and <code class="highlighter-rouge">&lt;footer&gt;</code> act more or less like <code class="highlighter-rouge">&lt;div&gt;</code> elements. They group other elements together into page sections. However where a <code class="highlighter-rouge">&lt;div&gt;</code> tag could contain any type of information, it is easy to identify what sort of information would go in a semantic <code class="highlighter-rouge">&lt;header&gt;</code> region.</p>
+
+<h2 id="benefits-of-semantic-elements">Benefits of semantic elements</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;header&gt;&lt;/header&gt;</span>
+<span class="nt">&lt;section&gt;</span>
+	<span class="nt">&lt;article&gt;</span>
+		<span class="nt">&lt;figure&gt;</span>
+			<span class="nt">&lt;img&gt;</span>
+			<span class="nt">&lt;figcaption&gt;&lt;/figcaption&gt;</span>
+		<span class="nt">&lt;/figure&gt;</span>
+	<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;footer&gt;&lt;/footer&gt;</span>
+</code></pre></div></div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"header"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"figure"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;img&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"figcaption"</span><span class="nt">&gt;&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"footer"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>easier to read</li>
+  <li>greater accessibility</li>
+  <li>consistent code</li>
+</ol>
+
+<h2 id="section-and-article"><code class="highlighter-rouge">&lt;section&gt;</code> and <code class="highlighter-rouge">&lt;article&gt;</code></h2>
+
+<p>The <code class="highlighter-rouge">&lt;section&gt;</code> and <code class="highlighter-rouge">&lt;article&gt;</code> elements are conceptually similar and interchangeable. To decide which of these you should choose, take note of the following:</p>
+
+<ol>
+  <li>An article is intended to be independently distributable or reusable.</li>
+  <li>A section is a thematic grouping of content.
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;section&gt;</span>
+   <span class="nt">&lt;p&gt;</span>Top Stories<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;section&gt;</span>
+     <span class="nt">&lt;p&gt;</span>News<span class="nt">&lt;/p&gt;</span>
+     <span class="nt">&lt;article&gt;</span>Story 1<span class="nt">&lt;/article&gt;</span>
+     <span class="nt">&lt;article&gt;</span>Story 2<span class="nt">&lt;/article&gt;</span>
+     <span class="nt">&lt;article&gt;</span>Story 3<span class="nt">&lt;/article&gt;</span>
+   <span class="nt">&lt;/section&gt;</span>
+   <span class="nt">&lt;section&gt;</span>
+     <span class="nt">&lt;p&gt;</span>Sport<span class="nt">&lt;/p&gt;</span>
+     <span class="nt">&lt;article&gt;</span>Story 1<span class="nt">&lt;/article&gt;</span>
+     <span class="nt">&lt;article&gt;</span>Story 2<span class="nt">&lt;/article&gt;</span>
+     <span class="nt">&lt;article&gt;</span>Story 3<span class="nt">&lt;/article&gt;</span>
+   <span class="nt">&lt;/section&gt;</span>
+ <span class="nt">&lt;/section&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="header-and-hgroup"><code class="highlighter-rouge">&lt;header&gt;</code> and <code class="highlighter-rouge">&lt;hgroup&gt;</code></h2>
+
+<p>The <code class="highlighter-rouge">&lt;header&gt;</code> element is generally found at the top of a document, a section, or an article and usually contains the main heading and some navigation and search tools.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;header&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Company A<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/home"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/about"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/contact"</span><span class="nt">&gt;</span>Contact us<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">target=</span><span class="s">"/search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"q"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">&lt;hgroup&gt;</code> element should be used where you want a main heading with one or more subheadings.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;hgroup&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Heading 1<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Subheading 1<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Subheading 2<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;/hgroup&gt;</span>
+</code></pre></div></div>
+
+<p><strong>!</strong> The <code class="highlighter-rouge">&lt;header&gt;</code> element can contain any content, but the <code class="highlighter-rouge">&lt;hgroup&gt;</code> element can only contain other headers, that is <code class="highlighter-rouge">&lt;h1&gt;</code> to <code class="highlighter-rouge">&lt;h6&gt;</code> and including <code class="highlighter-rouge">&lt;hgroup&gt;</code>.</p>
+
+<h2 id="aside"><code class="highlighter-rouge">&lt;aside&gt;</code></h2>
+
+<p>The <code class="highlighter-rouge">&lt;aside&gt;</code> element is intended for content that is not part of the flow of the text in which it appears, however still related in some way. This of <code class="highlighter-rouge">&lt;aside&gt;</code> as a sidebar to your main content.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;aside&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a sidebar, for example a terminology definition or a short background to a historical figure.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/aside&gt;</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">&lt;nav&gt;</code> in <code class="highlighter-rouge">&lt;aside&gt;</code> : As a local navigation. Global navi is located in <code class="highlighter-rouge">&lt;header&gt;</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/home"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/about"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/contact"</span><span class="nt">&gt;</span>Contact us<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
+<h2 id="figure-and-figcaption"><code class="highlighter-rouge">&lt;figure&gt;</code> and <code class="highlighter-rouge">&lt;figcaption&gt;</code></h2>
+
+<p><code class="highlighter-rouge">&lt;figure&gt;</code> is for wrapping your image content around it, and <code class="highlighter-rouge">&lt;figcaption&gt;</code> is to caption your image.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;figure&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://en.wikipedia.org/wiki/File:Shadow_of_Mordor_cover_art.jpg"</span> <span class="na">alt=</span><span class="s">"Shadow of Mordor"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;figcaption&gt;</span>Cover art for Middle-earth: Shadow of Mordor<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</code></pre></div></div>
+
+<h2 id="footer"><code class="highlighter-rouge">&lt;footer&gt;</code></h2>
+
+<p>Just like the <code class="highlighter-rouge">&lt;header&gt;</code> the content is generally metainformation, such as author details, legal information, and/or links to related information. It is also valid to include <code class="highlighter-rouge">&lt;section&gt;</code> elements within a footer.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;footer&gt;</span><span class="ni">&amp;copy;</span>Company A<span class="nt">&lt;/footer&gt;</span>
+</code></pre></div></div>
+:ET
