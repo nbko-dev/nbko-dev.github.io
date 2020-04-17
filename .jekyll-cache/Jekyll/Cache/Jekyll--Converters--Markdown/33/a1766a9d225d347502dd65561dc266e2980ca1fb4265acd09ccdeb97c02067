@@ -1,0 +1,138 @@
+I"y<p>The flex container properties</p>
+
+<ul>
+  <li><code class="highlighter-rouge">flex-direction</code></li>
+  <li><code class="highlighter-rouge">flex-wrap</code></li>
+  <li><code class="highlighter-rouge">flex-flow</code></li>
+  <li><code class="highlighter-rouge">justify-content</code></li>
+  <li><strong><code class="highlighter-rouge">align-items</code></strong></li>
+  <li><strong><code class="highlighter-rouge">align-content</code></strong></li>
+</ul>
+
+<h2 id="all-properties">All Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>display</strong></td>
+      <td>Specifies the type of box used for an HTML element</td>
+    </tr>
+    <tr>
+      <td>flex-direction</td>
+      <td>Specifies the direction of the flexible items inside a flex container</td>
+    </tr>
+    <tr>
+      <td>justify-content</td>
+      <td>Horizontally aligns the flex items when the items do not use all available space on the main-axis</td>
+    </tr>
+    <tr>
+      <td><strong>align-items</strong></td>
+      <td>Vertically aligns the flex items when the items do not use all available space on the cross-axis</td>
+    </tr>
+    <tr>
+      <td>flex-wrap</td>
+      <td>Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line</td>
+    </tr>
+    <tr>
+      <td><strong>align-content</strong></td>
+      <td>Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines</td>
+    </tr>
+    <tr>
+      <td>flex-flow</td>
+      <td>A shorthand property for flex-direction and flex-wrap</td>
+    </tr>
+    <tr>
+      <td>order</td>
+      <td>Specifies the order of a flexible item relative to the rest of the flex items inside the same container</td>
+    </tr>
+    <tr>
+      <td>align-self</td>
+      <td>Used on flex items. Overrides the container’s align-items property</td>
+    </tr>
+    <tr>
+      <td>flex</td>
+      <td>A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="../images/flexbox/flexbox-container-map.png" alt="flexbox-container-map" /></p>
+
+<h2 id="align-items">align-items</h2>
+
+<p>The <code class="highlighter-rouge">align-items</code> property is used to align the flex items vertically.</p>
+
+<p><img src="../images/flexbox/direction-of-align-items.png" alt="direction-of-align-items" /></p>
+
+<h3 id="properties">Properties</h3>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">stretch</code> : default</p>
+  </li>
+  <li><code class="highlighter-rouge">flex-start</code></li>
+  <li><code class="highlighter-rouge">center</code></li>
+  <li><code class="highlighter-rouge">flex-end</code></li>
+</ul>
+
+<h3 id="stretch">stretch</h3>
+
+<p>The <em>stretch</em> value stretches the flex items to fill the container.</p>
+
+<p><img src="../images/flexbox/align-items-stretch.png" alt="align-items-stretch" /></p>
+
+<h3 id="flex-start-center-flex-end">flex-start, center, flex-end</h3>
+
+<p><img src="../images/flexbox/align-items-row.png" alt="align-items-row" /></p>
+
+<p><img src="../images/flexbox/align-items-column.png" alt="align-items-column" /></p>
+
+<h3 id="baseline">baseline</h3>
+
+<p>The <em>baseline</em> value aligns the flex items such as their baselines aligns.</p>
+
+<p><strong>Note</strong>: <em>baseline</em> value can be used also in <code class="highlighter-rouge">justify-content</code> property.</p>
+
+<p><img src="../images/flexbox/align-items-baseline.png" alt="align-items-baseline" /></p>
+
+<h2 id="align-content">align-content</h2>
+
+<p>The <code class="highlighter-rouge">align-content</code> property is used to align the flex lines.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">stretch</code> : default</li>
+  <li><code class="highlighter-rouge">flex-start</code></li>
+  <li><code class="highlighter-rouge">center</code></li>
+  <li><code class="highlighter-rouge">flex-end</code></li>
+  <li><code class="highlighter-rouge">space-between</code></li>
+  <li><code class="highlighter-rouge">space-around</code></li>
+</ul>
+
+<h3 id="flex-start-center-flex-end-1">flex-start, center, flex-end</h3>
+
+<p><img src="../images/flexbox/align-content-row.png" alt="align-content-row" /></p>
+
+<p><img src="../images/flexbox/align-content-column.png" alt="align-content-row" /></p>
+
+<h3 id="space-between-space-around">space-between, space-around</h3>
+
+<p><img src="../images/flexbox/align-space-row.png" alt="align-space-row" /></p>
+
+<p><img src="../images/flexbox/align-space-column.png" alt="align-space-column" /></p>
+
+<h2 id="difference-of-align-items-from-align-content">Difference of align-items from align-content</h2>
+
+<p><img src="../images/flexbox/align-items.png" alt="align-items" /></p>
+
+<h2 id="related-links">Related Links</h2>
+
+<ul>
+  <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">https://www.w3schools.com/css/css3_flexbox.asp</a></li>
+</ul>
+:ET
