@@ -1,4 +1,4 @@
-I"�<p><img src="../images/flexbox/container-structure.png" alt="container-structure" /><em>Basic structure of flexbox</em></p>
+I"�<p><img src="../images/flexbox/container-structure.png" alt="container-structure" /><em>Basic structure of flexbox</em></p>
 
 <p>Parent element(container) must have <code class="highlighter-rouge">display</code>: flex property.</p>
 
@@ -161,5 +161,6 @@
 
 <ul>
   <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">https://www.w3schools.com/css/css3_flexbox.asp</a></li>
+  <li><a href="https://edu.goorm.io/lecture/16322/한-눈에-끝내는-html5-css3">https://edu.goorm.io/lecture/16322/한-눈에-끝내는-html5-css3</a></li>
 </ul>
 :ET

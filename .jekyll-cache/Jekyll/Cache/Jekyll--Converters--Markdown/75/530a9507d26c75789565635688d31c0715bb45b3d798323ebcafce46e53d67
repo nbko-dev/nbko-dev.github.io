@@ -1,0 +1,83 @@
+I":<p><strong>Object-oriented programming</strong> (<strong>OOP</strong>) is a <a href="https://en.wikipedia.org/wiki/Programming_paradigm">programming paradigm</a> based on the concept of “<a href="https://en.wikipedia.org/wiki/Object_(computer_science)">objects</a>”, which can contain <a href="https://en.wikipedia.org/wiki/Data">data</a>, in the form of <a href="https://en.wikipedia.org/wiki/Field_(computer_science)">fields</a> (often known as <em>attributes</em> or <em>properties</em>), and code, in the form of procedures (often known as <em><a href="https://en.wikipedia.org/wiki/Method_(computer_science)">methods</a></em>). A feature of objects is an object’s procedures that can access and often modify the data fields of the object with which they are associated (objects have a notion of “<a href="https://en.wikipedia.org/wiki/This_(computer_programming)">this</a>” or “self”). In OOP, computer programs are designed by making them out of objects that interact with one another. OOP languages are diverse, but the most popular ones are <a href="https://en.wikipedia.org/wiki/Class-based_programming">class-based</a>, meaning that objects are <a href="https://en.wikipedia.org/wiki/Instance_(computer_science)">instances</a> of <a href="https://en.wikipedia.org/wiki/Class_(computer_science)">classes</a>, which also determine their <a href="https://en.wikipedia.org/wiki/Data_type">types</a>.</p>
+
+<h3 id="fundamental-concepts-of-oop">Fundamental Concepts of OOP</h3>
+
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Class_(computer_science)">Classes</a> – the definitions for the data format and available procedures for a given type or class of object; may also contain data and procedures (known as class methods) themselves, i.e. classes contain the data members and member functions</li>
+  <li><a href="https://en.wikipedia.org/wiki/Object_(computer_science)">Objects</a> – instances of classes</li>
+  <li>Methods</li>
+  <li>Properties</li>
+  <li>Encapsulation</li>
+  <li>Aggregation</li>
+  <li>Inheritance</li>
+  <li>Reuse</li>
+</ul>
+
+<h2 id="object">Object</h2>
+
+<p>There is a soccer player called <em>Park Ji-Sung</em>. He can be defined with several characteristics like name, age, position and so on. He moves in games, i.e. dribbles, shoots etc. If he were an object in JS, his characteristics might be represented as properties and movement be method.</p>
+
+<ul>
+  <li>Object: <em>Park Ji-Sung</em></li>
+  <li>Properties: name, age, height, position, current team …</li>
+  <li>Methods: dribble, shoot, pass, tackle …</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">park_ji_sung</span> <span class="o">=</span> <span class="p">{</span> 
+	<span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Park Ji Sung</span><span class="dl">"</span><span class="p">,</span>
+	<span class="na">height</span><span class="p">:</span> <span class="mi">178</span><span class="p">,</span>
+	<span class="na">weight</span><span class="p">:</span> <span class="mi">70</span><span class="p">,</span>
+	<span class="na">position</span><span class="p">:</span> <span class="dl">"</span><span class="s2">RW</span><span class="dl">"</span><span class="p">,</span>
+	<span class="na">team</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">Queen’s Park Rangers</span><span class="dl">"</span>
+<span class="p">};</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">park_ji_sung</span><span class="p">.</span><span class="nx">team</span><span class="p">);</span>
+<span class="c1">// "Queen’s Park Rangers"</span>
+</code></pre></div></div>
+
+<h2 id="class">Class</h2>
+
+<p>Class is like mold casting, which makes many objects from one template. This can be explained with our soccer player class metaphor.</p>
+
+<p>“<em>Park Ji-Sung</em> is an instance made from <em>Soccer Player</em> class”</p>
+
+<p>And it is expressed in JS like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">SoccerPlayer</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="p">};</span>
+
+<span class="nx">SoccerPlayer</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="p">{</span> 
+	<span class="na">name</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+	<span class="na">age</span><span class="p">:</span> <span class="nb">Number</span><span class="p">,</span>
+	<span class="na">height</span><span class="p">:</span> <span class="nb">Number</span><span class="p">,</span>
+	<span class="na">weight</span><span class="p">:</span> <span class="nb">Number</span><span class="p">,</span>
+	<span class="na">position</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+	<span class="na">team</span> <span class="p">:</span> <span class="nb">String</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">park_ji_sung</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SoccerPlayer</span><span class="p">();</span> 
+
+<span class="nx">park_ji_sung</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Park Ji Sung</span><span class="dl">"</span><span class="p">;</span> 
+<span class="nx">park_ji_sung</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="mi">31</span><span class="p">;</span>
+<span class="nx">park_ji_sung</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="mi">178</span><span class="p">;</span>
+<span class="nx">park_ji_sung</span><span class="p">.</span><span class="nx">weight</span> <span class="o">=</span> <span class="mi">70</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">park_ji_sung</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>But the concept of OOP in JavaScript is slight <strong>different</strong> from C++ and JAVA. The concept of class does not actually exist in JavaScript. All elements in JS are <strong>based on the object</strong>.</p>
+
+<p>JavaScript is a <strong>prototypal</strong> OOP language.</p>
+
+<p>“<em>Park Ji-Sung</em> is an instance made from <em>Soccer Player</em> class” should be rewritten like,</p>
+
+<p>“<em>Park Ji Sung</em> is an object created with <strong>reuse of the object <em>Soccer Player</em> as a prototype</strong>”</p>
+
+<hr />
+
+<h2 id="related-links">Related Links</h2>
+
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Object-oriented_programming">https://en.wikipedia.org/wiki/Object-oriented_programming</a></li>
+  <li><a href="https://edu.goorm.io/lecture/557/한-눈에-끝내는-node-js">https://edu.goorm.io/lecture/557/한-눈에-끝내는-node-js</a></li>
+</ul>
+:ET
